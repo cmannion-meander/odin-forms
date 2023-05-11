@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33vw;
+    height: 100vh;
+}
+
+#astronaut {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+@font-face {
+    font-family: star-wars;
+    src: url(SoloistHalftone2-x2a5.otf);
+}
+
+.logo {
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 33vw;
+    display: flex;
+    position: fixed;
+    top: 80vh; 
+    background-color: rgba(255, 255, 255, 0.35);
+    font-family: star-wars, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.attribution {
+    position: fixed;
+    bottom: 2vh;
+    text-align: center;
+    width: 33vw;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: aliceblue;
+}
+
+.intro {
+    display: flex;
+    padding: 10px 40px;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+}
+
+.copy, header{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.form {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 40px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 10px 5px 5px gray;
+}
+
+#create {
+    width: 10vw;
+    height: 3vh;
+    background-color: darkblue;
+    color: lightgray
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 40px;
+}
