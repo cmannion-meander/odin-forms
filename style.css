@@ -60,7 +60,7 @@ body {
     display: flex;
     padding: 10px 40px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     height: 40vh;
 }
 
@@ -80,10 +80,21 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 10px 40px;
+    padding: 40px 40px;
     background-color: white;
     border-radius: 3px;
     box-shadow: 10px 5px 5px gray;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
 }
 
 #create {
@@ -98,3 +109,36 @@ body {
     gap: 20px;
     padding: 40px 40px;
 }
+
+input:invalid {
+    background-color: #ffdddd;
+  }
+
+input:focus {
+    background-color: lightblue;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+/* unvisited link */
+a:link {
+    color: maroon;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightcoral;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
